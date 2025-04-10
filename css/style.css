@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#right{
+    margin-right: 20px;
+    margin-top: 32px;
+}
+#timer{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 52px;
+    height: 21px;
+}
+
+#avanti-notch{  
+  
+    padding: 0rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#avanti-header{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 4%; /* ou 0%, ou 0px */
+    background-color: #005CFF;
+    color: white;
+}
+#avanti-header p{
+    padding: 0.3rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#purple{
+    background-color: #6220C1;
+    padding: 0rem 0.3rem 0rem 0.3rem;
+}
+
+#less{
+    font-weight: 400;
+}
+
+#cart{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary{
+    display: flex;
+    justify-content: space-between;
+}
+
+#scale-image {
+    margin-top: 1.2rem;
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+
+
+  #start-page-two{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+
+  #div-carousel{
+
+    width: 25rem;
+    margin-left: 1rem;
+  
+  }
+
+    .carousel-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel-images img {
+    width: 45%; /* Ajuste a largura das imagens conforme necessário */
+  }
