@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 #right {
@@ -73,7 +72,7 @@
 
 #div-carousel {
   width: 25rem;
- 
+
   position: relative;
 }
 
@@ -179,7 +178,7 @@
 #banner-img {
   width: 100vw;
   height: 100%;
-  
+
   object-fit: cover;
 }
 
@@ -240,7 +239,7 @@
   background-color: #dedede;
   gap: 1rem;
   max-width: 100vw;
-  scale: 1.0;
+  scale: 1;
 }
 /* #img-banner-locals{
   width: 100vw;
@@ -284,6 +283,28 @@
   text-transform: uppercase;
 }
 
-.banner-description-two{
+.banner-description-two {
   margin-top: 4rem;
+}
+
+.banner-quarto{
+  margin-top: 2rem;
+}
+
+#img-room{
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+#room-description {
+  width: 100vw;
+  height: 75;
+  padding: 15px;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 16em;
+  background-color: #005cff;
+  display: flex;
+ justify-content: center;
 }
