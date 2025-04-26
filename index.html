@@ -21,6 +21,8 @@
     <title>AVANTI</title>
   </head>
   <body>
+    <main class="container-global">
+    <script src="js/script.js"></script>
     <header>
       <div id="avanti-notch">
         <img id="timer" src="assets/Left Side.png" alt="" />
@@ -41,7 +43,7 @@
     </header>
 
     <!-- Inicio NavBar Hamburguer -->
-
+<div class="global-nav">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <!-- Botão hambúrguer alinhado à esquerda -->
@@ -56,7 +58,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <img src="assets/Grupo 21089.png" alt="" />
+        <img id="image-logoo" src="assets/Grupo 21089.png" alt="" />
 
         <!-- Marca ao lado do botão -->
         <svg
@@ -122,6 +124,7 @@
         style="max-width: 400px"
       >
         <input
+          id="campoBuscar"
           class="form-control pe-5"
           type="search"
           placeholder="Digite aqui o que você procura"
@@ -142,11 +145,30 @@
           "
         />
       </div>
+    </div>
+   
+      <label id="resultadoBusca" for="campoBuscar"></label>
     </nav>
     <!-- Fim Input de busuca-->
     
     <!-- Imagem de Background Section 2-->
+    <div class="scale-images">
+      <div class="image-desktop">
+        <img src="assets/Rectangle 10.png" alt="">
+        <div class="frases">
+        <p><span id="main-text">SUPER</span>SALE</p>
+        <span id="sub-text">
+          Itens selecionados com até
+        </span>
+          <span id="off">
+            50% OFF
+          </span>
+      </div>
+      </div>
+      <div class="image-mobile">
     <img id="scale-image" src="assets/Component 14.png" alt="">
+  </div>
+  </div>
       <!-- Fim Imagem de Background Section 2-->
 
       <div id="start-page-two">
@@ -157,7 +179,7 @@
       <!-- Seção do Carrossel -->
       
       <div id="div-carousel">
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <main id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -168,8 +190,8 @@
               <div class="carousel-images">
                 <div id="teste">
                   <img id="new" src="assets/Grupo 19279.png" alt="">
-                <img src="assets/produto-avanti-Mockup.png" class="d-block w-50" alt="...">
-                <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
+                  <img id="product-show" src="assets/produto-avanti-Mockup.png" class="d-block " alt="...">
+                  <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
                
                 <div class="card">
                   <div class="preco-superior">
@@ -185,7 +207,7 @@
               </div>
               <div id="teste">
                 <img id="new" src="assets/Grupo 19279.png" alt="">
-              <img src="assets/produto-avanti-Mockup.png" class="d-block w-50" alt="...">
+              <img src="assets/produto-avanti-Mockup.png" class="d-block " alt="...">
               <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
              
               <div class="card">
@@ -213,7 +235,7 @@
                 
                 <div id="teste">
                   <img id="new" src="assets/Grupo 19279.png" alt="">
-                <img src="assets/produto-avanti-Mockup.png" class="d-block w-50" alt="...">
+                <img src="assets/produto-avanti-Mockup.png" class="d-block " alt="...">
                 <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
                
                 <div class="card">
@@ -230,7 +252,7 @@
               </div>
               <div id="teste">
                 <img id="new" src="assets/Grupo 19279.png" alt="">
-              <img src="assets/produto-avanti-Mockup.png" class="d-block w-50" alt="...">
+              <img src="assets/produto-avanti-Mockup.png" class="d-block " alt="...">
               <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
              
               <div class="card">
@@ -255,7 +277,7 @@
               <div class="carousel-images">
                 <div id="teste">
                   <img id="new" src="assets/Grupo 19279.png" alt="">
-                <img src="assets/produto-avanti-Mockup.png" class="d-block w-50" alt="...">
+                <img src="assets/produto-avanti-Mockup.png" class="d-block " alt="...">
                 <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
                
                 <div class="card">
@@ -272,7 +294,7 @@
               </div>
               <div id="teste">
                 <img id="new" src="assets/Grupo 19279.png" alt="">
-              <img src="assets/produto-avanti-Mockup.png" class="d-block w-50" alt="...">
+              <img src="assets/produto-avanti-Mockup.png" class="d-block " alt="...">
               <h5 id="lorem-ipsum">Lorem ipsum dolor sit amet consectetuer adipiscing elit </h5>
              
               <div class="card">
@@ -310,6 +332,7 @@
         <!--Sessão Banner + Descrição -->
 
         <section class="banner-description">
+          <div id="first-banner">
           <div id="banner">
             <img id="banner-img" src="assets/image.png" alt="">
           </div>
@@ -317,22 +340,23 @@
           <div id="description">
             <h1 id="title-lorem">LOREM IPSUM</h1>
             <p id="description-text">
-              Aenean massa. Cum sociis natoque penatibus et<br>
-              magnis dis parturient montes, nascetur ridiculus<br>
-              mus. Donec quam felis, ultricies nec,<br>               
-              pellentesque eu, pretium quis, sem. Nulla<br>
+              Aenean massa. Cum sociis natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus
+              mus. Donec quam felis, ultricies nec,              
+              pellentesque eu, pretium quis, sem. Nulla
               consequat massa quis enim.
             </p>
 
             <p id="description-text-two">
-              Cras dignissim est et pellentesque tincidunt.<br>
-              Praesent bibendum quis velit a aliquam. Ut<br>
-              vestibulum turpis eget mi iaculis ullamcorper.<br>
-              Curabitur nec metus sed tortor sollicitudin porta<br>
-              nec eu enim. Ut fermentum scelerisque tortor<br>
-              mollis volutpat. Mauris iaculis magna nisl, vel<br>
-              porttitor augue placerat et.</p>
+              Cras dignissim est et pellentesque tincidunt.
+              Praesent bibendum quis velit a aliquam. Ut
+              vestibulum turpis eget mi iaculis ullamcorper.
+              Curabitur nec metus sed tortor sollicitudin porta
+              nec eu enim. Ut fermentum scelerisque tortor
+              mollis volutpat. Mauris iaculis magna nisl, vel
+              porttitor augue placerat et.
           </div>
+        </div>
         </section>
 
         <!-- Fim da sessão Banner + Descrição-->
@@ -341,31 +365,33 @@
         <!-- Iniciando Sessão Banner e Locais -->
 
         <section class="banner-locais" >  
-          
+          <div>
           <img id="img-banner-locals" src="assets/segundo banner.png" alt="">
+        </div>
+        <div class="description-locais">
           <h1 id="lorem-location">LOREM IPSUM</h1>
           <div class="icon-description">
             <img id="icon-circle" src="assets/Circulo e Icone.png" alt="">
-            <p id="p-icon-description">Aenean massa. Cum sociis natoque penatibus<br>
-               et magnis dis parturient montes, nascetur<br>
-                ridiculus mus. Donec quam felis, ultricies nec,<br>
+            <p id="p-icon-description">Aenean massa. Cum sociis natoque penatibus
+               et magnis dis parturient montes, nascetur
+                ridiculus mus. Donec quam felis, ultricies nec,
                  pellentesque eu, pretium quis, sem. </p>
           </div>
           <div class="icon-description">
             <img id="icon-circle" src="assets/Circulo e Icone.png" alt="">
-            <p id="p-icon-description">Aenean massa. Cum sociis natoque penatibus<br>
-               et magnis dis parturient montes, nascetur<br>
-                ridiculus mus. Donec quam felis, ultricies nec,<br>
+            <p id="p-icon-description">Aenean massa. Cum sociis natoque penatibus
+               et magnis dis parturient montes, nascetur
+                ridiculus mus. Donec quam felis, ultricies nec,
                  pellentesque eu, pretium quis, sem. </p>
           </div>
           <div class="icon-description">
             <img id="icon-circle" src="assets/Circulo e Icone.png" alt="">
-            <p id="p-icon-description">Aenean massa. Cum sociis natoque penatibus<br>
-               et magnis dis parturient montes, nascetur<br>
-                ridiculus mus. Donec quam felis, ultricies nec,<br>
+            <p id="p-icon-description">Aenean massa. Cum sociis natoque penatibus
+               et magnis dis parturient montes, nascetur
+                ridiculus mus. Donec quam felis, ultricies nec,
                  pellentesque eu, pretium quis, sem. </p>
           </div>
- 
+        </div>
         </section>
         
         <!-- Finalizando Sessão Banner E Locais-->
@@ -382,20 +408,20 @@
           <div id="description">
             <h1 id="title-lorem">LOREM IPSUM</h1>
             <p id="description-text">
-              Aenean massa. Cum sociis natoque penatibus et<br>
-              magnis dis parturient montes, nascetur ridiculus<br>
-              mus. Donec quam felis, ultricies nec,<br>               
-              pellentesque eu, pretium quis, sem. Nulla<br>
+              Aenean massa. Cum sociis natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus
+              mus. Donec quam felis, ultricies nec,
+              pellentesque eu, pretium quis, sem. Nulla
               consequat massa quis enim.
             </p>
 
             <p id="description-text-two">
-              Cras dignissim est et pellentesque tincidunt.<br>
-              Praesent bibendum quis velit a aliquam. Ut<br>
-              vestibulum turpis eget mi iaculis ullamcorper.<br>
-              Curabitur nec metus sed tortor sollicitudin porta<br>
-              nec eu enim. Ut fermentum scelerisque tortor<br>
-              mollis volutpat. Mauris iaculis magna nisl, vel<br>
+              Cras dignissim est et pellentesque tincidunt.
+              Praesent bibendum quis velit a aliquam. Ut
+              vestibulum turpis eget mi iaculis ullamcorper.
+              Curabitur nec metus sed tortor sollicitudin porta
+              nec eu enim. Ut fermentum scelerisque tortor
+              mollis volutpat. Mauris iaculis magna nisl, vel
               porttitor augue placerat et.</p>
           </div>
         </section>
@@ -405,7 +431,7 @@
    <section class="banner-quarto">
     <img id="img-room" src="assets/quarto banner.png" alt="">
     <div id="room-description">
-      <p>Entre em contato conosco e verifique a<br> disponibilidade para sua região!</p>
+      <p id="p-span-room"><span>Entre em contato conosco e verifique a </span><span id="span-with-margin">disponibilidade para sua região!</span></p>
     </div>
    </section>
 
@@ -415,29 +441,32 @@
    <section class="form-register">
     <h5 id="h-cadastro">Cadastra-se na nossa <a href style="text-decoration: none;">newsletter</a> </h5>
     <div id="form-now">
-    <form  action="">
-      <input id="input-text" type="text" placeholder="Seu Nome"><br>
-      <input id="input-text" type="text" placeholder="Digite seu e-mail"><br>
-      <input id="checkbox-agree" type="checkbox" required> 
-      <label for="checkbox-agree">Estou de acordo com a Política de Privacidade</label>
-      <button id="button-for-form" type="button">Cadastrar!</button>
-    </form>
+      <form  id="form-responsive" action="">
+        <input id="input-text" type="text" placeholder="Seu Nome"><br>
+        <input id="input-text" type="text" placeholder="Digite seu e-mail"><br>
+        <div class="buttons-register-confirm">
+        <input id="checkbox-agree" type="checkbox" required> 
+        <label for="checkbox-agree">Estou de acordo com a Política de Privacidade</label>
+        <button id="button-for-form" type="button">Cadastrar!</button>
+      </div>
+      </form>
   </div>
 
    </section>
 
-   <!-- Social Media Session -->
+   <!-- Social Media Session and Navs -->
 
    <section class="session-social-media">
-    <div>
+    <div class="images-logo">
       <img id="image-avanti" src="assets/Grupo 21089.png" alt="">
-    </div>
+  
     <div id="images-social-media">
       <img src="assets/Union 633.png" alt="">
       <img src="assets/facebook.png" alt="">
       <img src="assets/youtube-logo.png" alt="">
       <img src="assets/logo-tiktok-svgrepo-com.png" alt="">
     </div>
+  </div>
     <hr style="width: 100vw">
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -580,6 +609,31 @@
       <img src="assets/União 38.png" alt="PayPal">
       <img src="assets/Grupo 8971.png" alt="Boleto">
     </div>
+    
 </section>
+
+<!--Footer-->
+<footer class="footer">
+  <div class="footer-content">
+    <p id="lorem-footer">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br>
+       nonummy nibh 
+      euismod tincidunt ut laoreet dolore magna aliquam<br> erat volutpat. 
+      Ut wisi enim ad minim veniam, quis nostrud exerci.
+    </p>
+
+    <div class="footer-icons">
+      <div id="first-icons">
+      <img src="assets/lets-encrypt.png" alt="Logo 1">
+      <img src="assets/vtex-pci.png" alt="Logo 2">
+    </div>
+    <div id="two-icons">
+      <img src="assets/avanti-footer.png" alt="Logo 2">
+      <img src="assets/vtex.png" alt="Logo 2">
+    </div>
+    </div>
+  </div>
+</footer>
+</main>
   </body>
 </html>

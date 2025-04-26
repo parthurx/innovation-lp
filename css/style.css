@@ -71,7 +71,8 @@
 }
 
 #div-carousel {
-  width: 25rem;
+  width: 100vw;
+  height: auto;
 
   position: relative;
 }
@@ -82,16 +83,16 @@
   gap: 0.5rem;
 }
 .carousel-images img {
-  width: 10rem;
-  height: 10rem;
-  object-fit: cover;
-  margin-left: 40px;
 }
 
 #teste {
   border-style: groove;
   border-width: 1px;
   border-radius: 0.9rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: anchor-center;
 }
 
 #new {
@@ -100,6 +101,7 @@
   margin-top: 12px;
   margin-left: 8px;
   border-radius: 4px;
+  margin-right: 80%;
 }
 
 #lorem-ipsum {
@@ -204,9 +206,6 @@
   font-family: Nunito;
   font-size: 18px;
   line-height: 140%;
-
-  width: 343;
-  height: 260;
   font-weight: 400;
 }
 
@@ -224,13 +223,13 @@
   font-size: 19px;
   line-height: 140%;
 
-  width: 343;
-  height: 260;
+  width: 343px;
+  height: 260px;
   font-weight: 400;
 }
 
 .banner-locais {
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin-top: 4rem;
   display: flex;
@@ -311,10 +310,12 @@
 }
 
 .form-register {
+  margin-right: 15px;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .h-cadastro {
@@ -326,7 +327,7 @@
 #input-text {
   margin: 10px;
   padding: 20px;
-  width: 326px;
+  width: 99%;
   height: 48px;
   border-radius: 8px;
 }
@@ -337,7 +338,7 @@
 label {
   font-family: Nunito Sans;
   color: #656565;
-  font-weight: 700;
+  font-weight: 700; 
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0px;
@@ -347,14 +348,17 @@ form {
   margin-left: 12px;
   background-color: #f5f5f5;
   padding: 20px;
-  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+
   border-radius: 15px;
 }
 
 #button-for-form {
   margin-left: 10px;
   margin-top: 8px;
-  width: 326px;
+  width: 100%;
   height: 48px;
   gap: 10px;
   border-radius: 8px;
@@ -375,7 +379,7 @@ form {
 .session-social-media {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   flex-direction: column;
   width: 100vw;
   background-color: #f5f5f5;
@@ -419,7 +423,7 @@ form {
   margin-right: 250px;
 }
 .bg-body-tertiary {
-  background-color: #F5F5F5 !important;
+  background-color: #f5f5f5 !important;
 }
 
 .icon-grid {
@@ -434,7 +438,202 @@ form {
 }
 
 .icon-grid img {
-  width: 30px;   /* 👈 menor tamanho */
+  width: 30px; /* 👈 menor tamanho */
   height: auto;
   object-fit: contain;
+}
+
+#lorem-footer {
+  width: 358;
+  height: 59;
+  top: 535.67px;
+  left: 16px;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#first-icons {
+  display: flex;
+  gap: 20px;
+}
+
+#p-span-room {
+  display: flex;
+  flex-direction: column;
+}
+#span-with-margin {
+  margin-left: 2rem;
+}
+
+.footer-icons img {
+  max-width: 100px;
+  height: auto;
+  gap: 20px;
+}
+
+#resultadoBusca {
+  margin-top: 20px;
+  margin-left: 28px;
+}
+
+#product-show {
+  height: auto;
+}
+
+.images-logo {
+  margin-left: 35%;
+}
+
+.image-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #avanti-notch {
+    display: none;
+  }
+  #scale-image {
+    background-image: url("assets/background-desktop.png");
+  }
+  #avanti-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #image.logoo {
+  }
+  #cart {
+    position: absolute; /* ou fixed, se quiser que fique fixo na tela */
+    top: 40px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+  .image-desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #e7e7ea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image-desktop img {
+    margin-left: 3rem;
+  }
+  .image-desktop #main-text {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+  .image-desktop p {
+    font-family: Nunito;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+  .frases {
+    width: 100vw;
+    height: auto;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .frases #sub-text {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 30%;
+    text-transform: uppercase;
+    width: 100%;
+    height: 34;
+    top: 122.49px;
+    left: -1.98px;
+    color: #005cff;
+  }
+  #off {
+    width: 244;
+    height: 82;
+    top: 168.49px;
+    left: 166.02px;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #005cff;
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+  #first-banner {
+    width: 100vw;
+    height: auto;
+    display: flex;
+  }
+  #banner-img {
+    width: 50vw;
+  }
+  #description {
+    margin-top: 10%;
+  }
+
+  .banner-locais {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .description-locais {
+    margin-left: 5rem;
+  }
+  #img-banner-locals {
+    margin-right: 6rem;
+  }
+  .banner-description-two {
+    display: flex;
+  }
+
+  #p-span-room {
+    display: inline;
+  }
+  #span-with-margin {
+    margin-left: 0rem;
+  }
+
+  #room-description p{
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  form{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
 }
